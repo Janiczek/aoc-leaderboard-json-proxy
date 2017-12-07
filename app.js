@@ -14,6 +14,7 @@ app.use(async ctx => {
     const response = await getJson({url, cookie});
 
     ctx.body = response.body;
+    ctx.set('Access-Control-Allow-Origin','*');
 
 });
 
