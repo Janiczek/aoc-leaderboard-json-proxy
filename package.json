@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "got": "^8.0.1",
     "koa": "^2.4.1"
