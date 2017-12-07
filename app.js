@@ -1,5 +1,7 @@
+const PORT = process.env.PORT || 5000;
+
 const http = require('http');
-const https = require('https');
+//const https = require('https');
 const Koa = require('koa');
 const got = require('got');
 
@@ -26,5 +28,5 @@ const getJson = async ({url, cookie}) => {
 
 };
 
-http.createServer(app.callback()).listen(80);
-https.createServer(app.callback()).listen(443);
+http.createServer(app.callback()).listen(PORT);
+//https.createServer(app.callback()).listen(443);
